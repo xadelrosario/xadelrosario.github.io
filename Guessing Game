@@ -23,3 +23,18 @@ flowchart TD
     L -- Yes --> B
     L -- No --> M[End Game]
 
+
+# Number Guessing Game - Description
+
+One of the oldest games in history, the guessing game is about as simple as it comes. In case you are new to planet Earth, here is a description of how it works:
+
+- The game begins by selecting a random number within a given range.
+- The player is prompted to enter a number.
+- The input is validated to ensure it is a valid number.
+- If the guess is too high or too low, the player is prompted and allowed to guess again. See where this is going?
+- The player has a limited number of attempts to guess correctly.
+- If the guess is correct, the player is congratulated.
+- If all attempts are used without a correct guess, the correct number is revealed.
+- At the end of each game, the player is asked if they would like to play again.
+
+
