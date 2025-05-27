@@ -1,0 +1,25 @@
+# Guessing Game Flowchart
+
+> ⚠️ Note: GitHub does not render Mermaid diagrams in standard `.md` files.  
+> To preview this diagram visually, paste it into [Mermaid Live Editor](https://mermaid.live).
+
+```mermaid
+flowchart TD
+    A[Start Game] --> B[Initialize game variables<br>Generate random number]
+    B --> C[Prompt user for a guess]
+    C --> D[Check if input is a valid number]
+    D -- No --> E[Show error message<br>Ask for input again]
+    E --> C
+    D -- Yes --> F[Compare guess with target number]
+    F -- Guess is too low --> G[Inform user: Too low]
+    F -- Guess is too high --> H[Inform user: Too high]
+    F -- Guess is correct --> I[Inform user: Correct!]
+    G --> J[Check attempts remaining]
+    H --> J
+    J -- Attempts remaining --> C
+    J -- No attempts left --> K[Reveal correct answer<br>End Game]
+    I --> L[Prompt: Play again?]
+    K --> L
+    L -- Yes --> B
+    L -- No --> M[End Game]
+
